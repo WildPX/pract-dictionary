@@ -4,7 +4,7 @@ import "./Styles/reset.css";
 import "./Styles/variables.css";
 import "./Styles/global.css";
 import MainPage from "./Components/Layout/MainPage/MainPage";
-import { DictionaryProvider } from "./DictionaryContext";
+import { DictionaryProvider } from "./DictionaryProvider";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>

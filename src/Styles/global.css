@@ -2,6 +2,12 @@ body {
   min-height: 100vh;
   font-family: var(--font-family-text);
   font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-text);
+}
+
+span {
+  font-family: var(--font-family-text);
+  font-weight: var(--font-weight-thin);
 }
 
 h1,
