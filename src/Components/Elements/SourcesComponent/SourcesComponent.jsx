@@ -5,6 +5,6 @@ function SourcesComponent() {
   const { sourceUrls } = data || {};
 
   console.log("Sources: ", sourceUrls);
-  return <div>Sources: {sourceUrls[0]}</div>;
+  return <div>Sources: {sourceUrls}</div>;
 }
 export default SourcesComponent;
