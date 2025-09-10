@@ -4,7 +4,19 @@ function SourcesComponent() {
   const { data } = useDictionary();
   const { sourceUrls } = data || {};
 
-  console.log("Sources: ", sourceUrls);
-  return <div>Sources: {sourceUrls}</div>;
+  return (
+    <div>
+      <h4>Sources</h4>
+      <ul>
+        {sourceUrls.map((url, index) => (
+          <li key={index}>
+            <a href={url} rel="noreferrer" target="_blank">
+              {url}
+            </a>
+          </li>
+        ))}
+      </ul>
+    </div>
+  );
 }
 export default SourcesComponent;

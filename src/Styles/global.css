@@ -3,6 +3,8 @@ body {
   font-family: var(--font-family-text);
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-text);
+  background: var(--color-background);
+  color: var(--color-text);
 }
 
 span {
@@ -18,6 +20,7 @@ h5,
 h6 {
   font-family: var(--font-family-headers);
   font-weight: var(--font-weight-bold);
+  color: var(--color-headers);
 }
 
 h1 {

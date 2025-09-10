@@ -1,9 +1,16 @@
+import DefinitionsList from "./DefinitionsList";
+import MeaningHeader from "./MeaningHeader";
+import WordList from "./Wordlist";
+
 function Meaning({ partOfSpeech, definitions, synonyms, antonyms }) {
   return (
-    <div>
-      Meaning.{" "}
-      <span style={{ textTransform: "capitalize" }}>{partOfSpeech}</span>
-    </div>
+    <article>
+      <MeaningHeader partOfSpeech={partOfSpeech} />
+      <DefinitionsList definitions={definitions} />
+      <WordList title="Synonyms" words={synonyms} />
+      <WordList title="Antonyms" words={antonyms} />
+    </article>
   );
 }
+
 export default Meaning;

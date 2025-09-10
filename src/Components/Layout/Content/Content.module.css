@@ -1,0 +1,12 @@
+.content-container {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: var(--spacing-md);
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  .content-container {
+    width: 90%;
+  }
+}

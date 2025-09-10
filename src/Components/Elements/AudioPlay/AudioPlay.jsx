@@ -1,11 +1,19 @@
+import { FaPlay } from "react-icons/fa";
 import { useDictionary } from "../../../DictionaryContext";
 
 function AudioPlay() {
   const { data } = useDictionary();
   const { phonetics } = data || {};
 
-  console.log("AudioPlay props:", { phonetics });
+  // Search for audio. If no audio found, return no component
+  const audio = phonetics.find((p) => p.audio)?.audio || "";
 
-  return <div>AudioPlay</div>;
+  if (!audio) return null;
+
+  return (
+    <button>
+      <FaPlay />
+    </button>
+  );
 }
 export default AudioPlay;

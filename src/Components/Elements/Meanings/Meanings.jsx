@@ -5,7 +5,6 @@ function Meanings() {
   const { data } = useDictionary();
   const { meanings } = data || {};
 
-  console.log("Meanings: ", meanings);
   return (
     <section>
       {meanings &&
